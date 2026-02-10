@@ -100,3 +100,9 @@ Client (React) -> API Gateway (FastAPI)
 2. Build job search connectors and seed sample data.
 3. Implement application tracking and dashboard UI.
 4. Add feedback loop and ranking improvements.
+
+
+## Project Structure & Requirements
+- See the project layout in [`docs/PROJECT_STRUCTURE.md`](docs/PROJECT_STRUCTURE.md).
+- See detailed requirements in [`docs/REQUIREMENTS.md`](docs/REQUIREMENTS.md).
+
