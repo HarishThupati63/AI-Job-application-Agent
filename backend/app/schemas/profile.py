@@ -1,0 +1,1 @@
+"""Profile API schema placeholder."""

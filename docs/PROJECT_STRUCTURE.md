@@ -2,32 +2,58 @@
 
 ```
 AI-Job-application-Agent/
-├── README.md
 ├── backend/
-│   ├── README.md
-│   ├── requirements.txt
 │   ├── app/
 │   │   ├── main.py
 │   │   ├── api/
-│   │   │   └── routes.py
+│   │   │   ├── routes.py
+│   │   │   ├── auth.py
+│   │   │   ├── profile.py
+│   │   │   ├── jobs.py
+│   │   │   ├── applications.py
+│   │   │   └── tracking.py
 │   │   ├── core/
-│   │   │   └── config.py
+│   │   │   ├── config.py
+│   │   │   ├── security.py
+│   │   │   └── logging.py
+│   │   ├── db/
+│   │   │   ├── session.py
+│   │   │   └── base.py
 │   │   ├── models/
-│   │   │   └── __init__.py
+│   │   │   ├── user.py
+│   │   │   ├── resume.py
+│   │   │   ├── job_posting.py
+│   │   │   ├── application.py
+│   │   │   └── feedback.py
 │   │   ├── schemas/
-│   │   │   └── __init__.py
-│   │   └── services/
-│   │       └── __init__.py
+│   │   │   ├── profile.py
+│   │   │   ├── jobs.py
+│   │   │   └── applications.py
+│   │   ├── services/
+│   │   │   ├── resume_parser.py
+│   │   │   ├── job_connectors/
+│   │   │   │   ├── linkedin.py
+│   │   │   │   ├── indeed.py
+│   │   │   │   └── common.py
+│   │   │   ├── matcher.py
+│   │   │   ├── cover_letter_generator.py
+│   │   │   └── apply_executor.py
+│   │   ├── workers/
+│   │   │   ├── celery_app.py
+│   │   │   └── tasks.py
+│   │   └── utils/
+│   │       ├── browser_automation.py
+│   │       └── validators.py
 │   └── tests/
 ├── frontend/
-│   ├── README.md
 │   └── src/
+│       ├── pages/
+│       ├── components/
+│       ├── services/api.ts
+│       └── store/
 └── docs/
+    ├── REQUIREMENTS.md
     ├── PROJECT_STRUCTURE.md
-    └── REQUIREMENTS.md
+    ├── API_CONTRACT.md
+    └── CONNECTORS.md
 ```
-
-## Notes
-- `backend/` contains FastAPI service scaffolding and dependency definitions.
-- `frontend/` is ready for a React/TypeScript dashboard bootstrap.
-- `docs/` stores project requirements and architecture documentation.
