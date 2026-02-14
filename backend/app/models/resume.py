@@ -1,0 +1,1 @@
+"""Resume model placeholder."""
