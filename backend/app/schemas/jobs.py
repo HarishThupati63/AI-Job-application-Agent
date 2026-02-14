@@ -1,0 +1,1 @@
+"""Jobs API schema placeholder."""
